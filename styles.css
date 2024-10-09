@@ -11,6 +11,7 @@ body {
     color: #2C2C2C; /* Eleganterer Dunkelgrau-Ton */
     line-height: 1.6;
     display: flex;
+    flex-direction: column; /* Changed to column to stack elements vertically */
     justify-content: center;
     align-items: center;
     min-height: 100vh;
@@ -35,15 +36,16 @@ body {
 /* Container für den Inhalt */
 .container {
     position: relative;
-    z-index: 2; /* Make sure content is on top of the overlay */
+    z-index: 2; /* Ensure content is above the overlay */
     text-align: center;
     padding: 20px;
-    background-color: rgba(255, 255, 255, 0.9); /* Leicht transparentes Weiß */
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white */
     border: 2px solid #eaeaea;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
     border-radius: 10px;
     max-width: 800px;
-    width: 100%; /* Ensures the container takes full width on mobile */
+    width: 90%; /* Make the container responsive */
+    margin-bottom: 20px; /* Space between the text box and the back link */
 }
 
 /* Überschrift mit eleganter Schrift */
@@ -62,23 +64,12 @@ p {
     text-align: justify;
 }
 
-/* Stil der Links */
-a {
-    text-decoration: none;
-    font-size: 1.1em;
-    color: #D4AF37; /* Goldton für Eleganz */
-    transition: color 0.3s, transform 0.3s;
-}
-
-a:hover {
-    color: #BFA16A;
-    transform: scale(1.05);
-}
-
 /* Stil für den Zurück-Link */
 .back-link {
-    margin-top: 20px;
+    position: relative;
+    z-index: 2; /* Ensure it's above the overlay */
     text-align: center;
+    margin-top: 10px;
 }
 
 .back-link a {
@@ -92,29 +83,9 @@ a:hover {
     transition: color 0.3s, background-color 0.3s;
 }
 
-/* Styling for the back-link */
-.back-link {
-    margin-top: 20px;
-    text-align: center;
-    width: 100%; /* Ensures the link is centered across the full width of the screen */
-}
-
-.back-link a {
-    font-size: 1.1em;
-    color: #D4AF37; /* Gold tone for elegance */
-    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background for better visibility */
-    padding: 8px 16px;
-    border-radius: 5px;
-    text-decoration: none;
-    display: inline-block;
-    transition: color 0.3s, background-color 0.3s;
-    margin: auto; /* Centers the link on the page */
-}
-
 .back-link a:hover {
     color: #FFFFFF; /* Change to white on hover */
     background-color: #BFA16A; /* Slightly darker gold on hover */
-
 }
 
 /* Responsive Design */
