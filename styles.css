@@ -92,9 +92,29 @@ a:hover {
     transition: color 0.3s, background-color 0.3s;
 }
 
+/* Styling for the back-link */
+.back-link {
+    margin-top: 20px;
+    text-align: center;
+    width: 100%; /* Ensures the link is centered across the full width of the screen */
+}
+
+.back-link a {
+    font-size: 1.1em;
+    color: #D4AF37; /* Gold tone for elegance */
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background for better visibility */
+    padding: 8px 16px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    transition: color 0.3s, background-color 0.3s;
+    margin: auto; /* Centers the link on the page */
+}
+
 .back-link a:hover {
     color: #FFFFFF; /* Change to white on hover */
     background-color: #BFA16A; /* Slightly darker gold on hover */
+
 }
 
 /* Responsive Design */
