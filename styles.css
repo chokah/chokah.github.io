@@ -1,78 +1,70 @@
 body {
-    background-image: url('rosen-hintergrund.jpg'); /* Stellen Sie sicher, dass der Dateiname korrekt ist */
+    background-image: url('rosen-hintergrund.jpg'); /* Ensure this image exists in your repository */
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    color: #f8f4e6;
+    color: #333; /* Assuming this matches your index page's text color */
     font-family: 'Helvetica Neue', Arial, sans-serif;
-    font-size: 18px;
-    line-height: 1.8;
     margin: 0;
     padding: 0;
 }
 
 header {
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(255, 255, 255, 0.8);
     padding: 10px 20px;
     text-align: center;
-    font-family: 'Times New Roman', serif;
-    color: #f8f4e6;
-    position: sticky;
-    top: 0;
-    width: 100%;
+    font-family: 'Georgia', serif;
+    color: #333;
+    border-bottom: 1px solid #ddd;
 }
 
 header h1 {
     font-size: 32px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
     margin: 10px 0;
-}
-
-nav {
-    margin-top: 10px;
+    letter-spacing: 2px;
 }
 
 nav .back-to-home {
     text-decoration: none;
-    color: #f8f4e6;
-    background: rgba(255, 255, 255, 0.2);
+    color: #333;
     padding: 8px 12px;
-    border-radius: 5px;
-    font-weight: bold;
-    transition: background 0.3s ease;
+    border: 1px solid #333;
+    border-radius: 4px;
+    transition: background 0.3s ease, color 0.3s ease;
 }
 
 nav .back-to-home:hover {
-    background: rgba(255, 255, 255, 0.4);
+    background: #333;
+    color: #fff;
 }
 
 main {
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(255, 255, 255, 0.9);
     padding: 40px 20px;
     max-width: 800px;
     margin: 40px auto;
     border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 main .bio-container {
-    font-size: 20px;
-    color: #f8f4e6;
+    font-size: 18px;
+    color: #333;
+    line-height: 1.6;
 }
 
 main p:first-of-type {
-    font-size: 22px;
+    font-size: 20px;
     font-style: italic;
-    font-weight: bold;
 }
 
 footer {
     text-align: center;
     padding: 10px;
-    background: rgba(0, 0, 0, 0.8);
-    color: #f8f4e6;
+    background: rgba(255, 255, 255, 0.8);
+    color: #333;
     font-size: 14px;
+    border-top: 1px solid #ddd;
 }
 
 
