@@ -1,0 +1,54 @@
+body {
+    background-image: url('rosen-hintergrund.jpg'); /* Stellen Sie sicher, dass der Dateiname und der Pfad korrekt sind */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #fff;
+    font-family: 'Georgia', serif;
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    text-align: center;
+    font-family: 'Times New Roman', serif;
+    color: #f8f4e6;
+}
+
+header h1 {
+    font-size: 36px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+main {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 40px;
+    max-width: 800px;
+    margin: 40px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+main p {
+    margin-bottom: 20px;
+}
+
+main p:first-of-type {
+    font-size: 22px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7);
+    color: #f8f4e6;
+    font-size: 14px;
+}
+
