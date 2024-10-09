@@ -8,7 +8,7 @@
 /* Hintergrund und allgemeine Stile */
 body {
     font-family: 'Montserrat', sans-serif;
-    color: #2C2C2C; /* Eleganter Dunkelgrau-Ton */
+    color: #2C2C2C; /* Eleganterer Dunkelgrau-Ton */
     line-height: 1.6;
     display: flex;
     justify-content: center;
@@ -35,7 +35,7 @@ body {
 /* Container für den Inhalt */
 .container {
     position: relative;
-    z-index: 2;
+    z-index: 2; /* Make sure content is on top of the overlay */
     text-align: center;
     padding: 20px;
     background-color: rgba(255, 255, 255, 0.9); /* Leicht transparentes Weiß */
@@ -62,28 +62,39 @@ p {
     text-align: justify;
 }
 
-/* Footer für den Zurück-Link */
-.footer {
+/* Stil der Links */
+a {
+    text-decoration: none;
+    font-size: 1.1em;
+    color: #D4AF37; /* Goldton für Eleganz */
+    transition: color 0.3s, transform 0.3s;
+}
+
+a:hover {
+    color: #BFA16A;
+    transform: scale(1.05);
+}
+
+/* Stil für den Zurück-Link */
+.back-link {
     margin-top: 20px;
     text-align: center;
 }
 
-.footer a {
-    font-size: 1em;
+.back-link a {
+    font-size: 1.1em;
     color: #D4AF37; /* Goldener Ton für Eleganz */
-    text-decoration: none;
-    font-weight: bold;
     background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background for better visibility */
     padding: 8px 16px;
     border-radius: 5px;
+    text-decoration: none;
     display: inline-block;
     transition: color 0.3s, background-color 0.3s;
 }
 
-.footer a:hover {
+.back-link a:hover {
     color: #FFFFFF; /* Change to white on hover */
     background-color: #BFA16A; /* Slightly darker gold on hover */
-    text-decoration: none;
 }
 
 /* Responsive Design */
@@ -100,7 +111,7 @@ p {
         padding: 15px; /* Reduced padding for better fit on mobile screens */
     }
 
-    .footer a {
+    .back-link a {
         font-size: 0.9em; /* Smaller font size for mobile */
         padding: 6px 12px; /* Adjusted padding for mobile devices */
     }
