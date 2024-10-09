@@ -1,0 +1,108 @@
+/* Grundlegende Reset-Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Hintergrund und allgemeine Stile */
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #2C2C2C; /* Eleganter Dunkelgrau-Ton */
+    line-height: 1.6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url('bilder/rosen-hintergrund.jpg'); /* Pfad zu Ihrem Rosenbild */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    padding: 20px; /* Added padding for better spacing on mobile */
+}
+
+/* Overlay für bessere Lesbarkeit */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.8); /* Halbtransparentes Weiß */
+    z-index: 1;
+}
+
+/* Container für den Inhalt */
+.container {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9); /* Leicht transparentes Weiß */
+    border: 2px solid #eaeaea;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    max-width: 800px;
+    width: 100%; /* Ensures the container takes full width on mobile */
+}
+
+/* Überschrift mit eleganter Schrift */
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5em;
+    margin-bottom: 15px;
+    color: #2C2C2C; /* Eleganter Dunkelgrau-Ton */
+}
+
+/* Einleitender Paragraph */
+p {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+    color: #555555; /* Weicheres Grau für Fließtext */
+    text-align: justify;
+}
+
+/* Footer für den Zurück-Link */
+.footer {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.footer a {
+    font-size: 1em;
+    color: #D4AF37; /* Goldener Ton für Eleganz */
+    text-decoration: none;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background for better visibility */
+    padding: 8px 16px;
+    border-radius: 5px;
+    display: inline-block;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+.footer a:hover {
+    color: #FFFFFF; /* Change to white on hover */
+    background-color: #BFA16A; /* Slightly darker gold on hover */
+    text-decoration: none;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.8em; /* Smaller font size for mobile */
+    }
+
+    p {
+        font-size: 0.9em; /* Smaller text size for mobile readability */
+    }
+
+    .container {
+        padding: 15px; /* Reduced padding for better fit on mobile screens */
+    }
+
+    .footer a {
+        font-size: 0.9em; /* Smaller font size for mobile */
+        padding: 6px 12px; /* Adjusted padding for mobile devices */
+    }
+}
+
